@@ -71,7 +71,12 @@ td a {
 
 .bienvenida h1 {
     color: white;
-    font-size: 35px;
+    font-size: 45px;
+}
+
+.bienvenida h2 {
+    color: gold;
+    font-size: 25px;
 }
 
 .bienvenida p {
@@ -79,9 +84,9 @@ td a {
     font-size: 20px;
 }
 .administrador {
-    width: 400px;
-    margin-left: 65%;
-    margin-top: 130px;
+    width: 500px;
+    margin-left: 45%;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -93,4 +98,55 @@ td a {
 .administrador p {
     color: white;
     font-size: 20px;
+}
+table b {
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body > h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+body > table p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+body > table img {
+    margin: 20px;
+}
+
+.carrito {
+    color: white;
+}
+
+.menu-admin {
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.menu-admin td {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-admin h2 {
+    color: gold;
+    font-size: 20px;
+}
+
+.menu-admin a {
+    color: white;
+    font-size: 18px;
 }
