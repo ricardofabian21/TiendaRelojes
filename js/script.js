@@ -9,11 +9,11 @@ function iniciarSesion() {
 
     } else if (usuario == "duoc" && contrasena == "1234") {
 
-        window.location.href = "usuario/home.html";
+        window.location.href = "../usuario/home.html";
 
     } else if (usuario == "admin" && contrasena == "1234") {
 
-        window.location.href = "admin/home.html";
+        window.location.href = "../admin/home.html";
 
     } else {
 
