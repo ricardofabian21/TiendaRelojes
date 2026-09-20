@@ -34,19 +34,6 @@ button {
     font-size: 16px;
 }
 
-.tituloUsuario {
-    color: white;
-     margin-left: 65%;
-    text-align: center;
-}
-
-.textoUsuario {
-    color: white;
-    font-size: 20px;
-    margin-left: 65%;
-    text-align: center;
-}
-
 table {
     margin: auto;
     margin-top: 20px;
@@ -65,7 +52,7 @@ td a {
 .bienvenida {
     width: 500px;
     margin-left: 55%;
-    margin-top: 150px;
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -149,4 +136,46 @@ body > table img {
 .menu-admin a {
     color: white;
     font-size: 18px;
+}
+
+.registro {
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.registro h2 {
+    color: white;
+}
+
+.registro form {
+    background-color: transparent;
+    color: white;
+    padding: 25px;
+}
+
+.registro p {
+    text-align: left;
+}
+
+.registro select {
+    width: 255px;
+    height: 30px;
+}
+
+.producto {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.producto img {
+    width: 200px;
+    height: 350px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.producto img:hover{
+    transform: scale(1.1);
 }
