@@ -179,3 +179,112 @@ body > table img {
 .producto img:hover{
     transform: scale(1.1);
 }
+
+.nosotros {
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nosotros h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.nosotros p {
+    color: white;
+    font-size: 18px;
+}
+
+.panel-botones-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.panel-botones-admin button {
+    width: 220px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.panel-botones-admin button:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
+
+.lista-usuarios-container {
+    margin-bottom: 80px; 
+}
+
+
+.lista-usuarios-container h1 {
+    color: white;
+}
+
+
+.tabla-datos-chronos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white; 
+    color: black; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+}
+
+/* Estilos para el encabezado (thead) */
+.tabla-datos-chronos thead {
+    background-color: black; 
+    color: gold; 
+}
+
+.tabla-datos-chronos th {
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase; 
+}
+
+.tabla-datos-chronos td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tabla-datos-chronos tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.tabla-datos-chronos button {
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.tabla-datos-chronos button:hover {
+    background-color: #e6c200; 
+}
+
+.tabla-datos-chronos button.btn-eliminar {
+    background-color: #e74c3c; 
+    color: white;
+}
+
+.tabla-datos-chronos button.btn-eliminar:hover {
+    background-color: #c0392b;
+}
