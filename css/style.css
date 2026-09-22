@@ -179,3 +179,21 @@ body > table img {
 .producto img:hover{
     transform: scale(1.1);
 }
+
+.nosotros {
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nosotros h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.nosotros p {
+    color: white;
+    font-size: 18px;
+}
