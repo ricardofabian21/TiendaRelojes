@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <title>Contacto - Tienda de Relojes</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<table>
+
+    <tr>
+
+        <td>
+            <img src="../img/logo.png" width="350">
+        </td>
+
+        <td><a href="../index.html">Inicio</a></td>
+
+        <td><a href="#">Productos</a></td>
+
+        <td><a href="../registro/registro.html">Registro</a></td>
+
+        <td><a href="../login/login.html">Iniciar Sesión</a></td>
+
+        <td><a href="../nosotros/nosotros.html">Nosotros</a></td>
+
+        <td><a href="../blogs/blogs.html">Blogs</a></td>
+
+        <td><a href="contacto.html">Contacto</a></td>
+
+        <td class="carrito" id="carrito-contador">🛒 Carrito (0)</td>
+
+    </tr>
+
+</table>
+
+
+<div class="contacto">
+
+    <h2>CONTACTO</h2>
+
+    <p class="intro">¿Dudas sobre un producto o un pedido? Escríbenos.</p>
+
+    <form id="formContacto">
+
+        <p>Nombre completo</p>
+        <input type="text" id="nombreContacto" maxlength="100">
+        <span class="error" id="errorNombre"></span>
+
+        <p>Correo</p>
+        <input type="text" id="correoContacto" maxlength="100">
+        <span class="error" id="errorCorreo"></span>
+
+        <p>Comentario</p>
+        <textarea id="comentarioContacto" maxlength="500"></textarea>
+        <span class="error" id="errorComentario"></span>
+
+        <br><br>
+
+        <button type="button" onclick="enviarMensajeContacto()">Enviar mensaje</button>
+
+        <p class="exito" id="mensajeExito">Mensaje enviado. Te responderemos pronto.</p>
+
+    </form>
+
+</div>
+
+
+<footer>
+
+    <p>Tienda de Relojes</p>
+
+    <p>Todos los derechos reservados 2026</p>
+
+</footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/contacto.js"></script>
+
+</body>
+
+</html>

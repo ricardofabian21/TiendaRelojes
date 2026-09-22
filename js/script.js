@@ -770,7 +770,7 @@ function agregarAlCarrito(boton) {
 
     const nombre = card.dataset.nombre;
     const precio = parseInt(card.dataset.precio);
-    agregarProducto(nombre, precio, cantidad);
+    agregarProductoAlCarrito(nombre, precio, cantidad);
 
     input.value = 0; // vuelve a cero para el próximo producto
 }
@@ -818,7 +818,7 @@ function agregarDesdeModal() {
     const nombre = productoModalActual.dataset.nombre;
     const precio = parseInt(productoModalActual.dataset.precio);
     const cantidad = parseInt(document.getElementById("modal-cantidad").value);
-    agregarProducto(nombre, precio, cantidad);
+    agregarProductoAlCarrito(nombre, precio, cantidad);
     cerrarModal();
 }
 
