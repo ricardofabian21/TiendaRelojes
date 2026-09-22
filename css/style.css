@@ -1,0 +1,181 @@
+body {
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login {
+    width: 350px;
+    margin-left: 59%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+form {
+    background-color: white;
+    color: black;
+    padding: 25px;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+}
+
+button {
+    background-color: gold;
+    color: black;
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+}
+
+table {
+    margin: auto;
+    margin-top: 20px;
+}
+
+td {
+    padding: 15px;
+}
+
+td a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.bienvenida {
+    width: 500px;
+    margin-left: 55%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.bienvenida h1 {
+    color: white;
+    font-size: 45px;
+}
+
+.bienvenida h2 {
+    color: gold;
+    font-size: 25px;
+}
+
+.bienvenida p {
+    color: white;
+    font-size: 20px;
+}
+.administrador {
+    width: 500px;
+    margin-left: 45%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.administrador h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.administrador p {
+    color: white;
+    font-size: 20px;
+}
+table b {
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body > h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+body > table p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+body > table img {
+    margin: 20px;
+}
+
+.carrito {
+    color: white;
+}
+
+.menu-admin {
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.menu-admin td {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-admin h2 {
+    color: gold;
+    font-size: 20px;
+}
+
+.menu-admin a {
+    color: white;
+    font-size: 18px;
+}
+
+.registro {
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.registro h2 {
+    color: white;
+}
+
+.registro form {
+    background-color: transparent;
+    color: white;
+    padding: 25px;
+}
+
+.registro p {
+    text-align: left;
+}
+
+.registro select {
+    width: 255px;
+    height: 30px;
+}
+
+.producto {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.producto img {
+    width: 200px;
+    height: 350px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.producto img:hover{
+    transform: scale(1.1);
+}
