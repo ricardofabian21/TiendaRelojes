@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Usuario</title>
+
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+
+    <table class="menu-admin">
+        <tr>
+            <td><h2>ADMINISTRADOR</h2></td>
+        </tr>
+        <tr>
+            <td><a href="../../../admin/home.html">Inicio</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Productos</a></td>
+        </tr>
+        <tr>
+            <td><a href="../Usuario_admin.html">Usuarios</a></td>
+        </tr>
+        <tr>
+            <td><a href="../../../login/login.html">Cerrar Sesión</a></td>
+        </tr>
+    </table>
+
+    <div class="registro">
+
+        <h2>NUEVO USUARIO</h2>
+
+        <form>
+
+            <p>Nombre</p>
+            <input type="text" id="nombreNuevoUsuario">
+
+            <p>Apellido</p>
+            <input type="text" id="apellidoNuevoUsuario">
+
+            <p>Correo</p>
+            <input type="text" id="correoNuevoUsuario">
+
+            <p>Contraseña</p>
+            <input type="password" id="contrasenaNuevoUsuario">
+
+            <br><br>
+
+            <button type="button" onclick="crearUsuarioAdmin()">Crear Usuario</button>
+            <button type="button" onclick="window.location.href='../Mostrar_Usuario/mostrar_usuario.html'">Cancelar</button>
+
+        </form>
+
+    </div>
+
+    <script src="../../../js/script.js"></script>
+</body>
+</html>

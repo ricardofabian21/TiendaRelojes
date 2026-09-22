@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario</title>
+
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+
+    <table class="menu-admin">
+        <tr>
+            <td><h2>ADMINISTRADOR</h2></td>
+        </tr>
+        <tr>
+            <td><a href="../../../admin/home.html">Inicio</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Productos</a></td>
+        </tr>
+        <tr>
+            <td><a href="../Usuario_admin.html">Usuarios</a></td>
+        </tr>
+        <tr>
+            <td><a href="../../../login/login.html">Cerrar Sesión</a></td>
+        </tr>
+    </table>
+
+    <div class="registro">
+
+        <h2>EDITAR USUARIO</h2>
+
+        <form>
+
+            <p>Selecciona un usuario</p>
+            <select id="selectUsuarioEditar" onchange="cargarUsuarioParaEditar(this.value)"></select>
+
+            <input type="hidden" id="idUsuarioEditar">
+
+            <p>Nombre</p>
+            <input type="text" id="nombreEditarUsuario">
+
+            <p>Apellido</p>
+            <input type="text" id="apellidoEditarUsuario">
+
+            <p>Correo</p>
+            <input type="text" id="correoEditarUsuario">
+
+            <p>Contraseña</p>
+            <input type="password" id="contrasenaEditarUsuario">
+
+            <br><br>
+
+            <button type="button" onclick="guardarEdicionUsuario()">Guardar Cambios</button>
+            <button type="button" onclick="window.location.href='../Mostrar_Usuario/mostrar_usuario.html'">Cancelar</button>
+
+        </form>
+
+    </div>
+
+    <script src="../../../js/script.js"></script>
+</body>
+</html>
