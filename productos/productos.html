@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <title>Productos - Tienda de Relojes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+
+</head>
+
+<body>
+
+<table>
+
+    <tr>
+
+        <td>
+            <img src="../img/logo.png" width="350">
+        </td>
+
+        <td><a href="../index.html">Inicio</a></td>
+
+        <td><a href="#">Productos</a></td>
+
+        <td><a href="../registro/registro.html">Registro</a></td>
+
+        <td><a href="../login/login.html">Iniciar Sesión</a></td>
+
+        <td><a href="#">Nosotros</a></td>
+
+        <td><a href="#">Blogs</a></td>
+
+        <td><a href="#">Contacto</a></td>
+
+        <td class="carrito" id="carrito-contador" onclick="abrirCarrito()">🛒 Carrito (0)</td>
+
+    </tr>
+
+</table>
+
+
+<div class="productos-container">
+
+    <h2 class="titulo-catalogo">Catálogo Disponible</h2>
+
+    <div class="productos-grid">
+
+        <div class="producto-card" data-nombre="Michael Kors" data-precio="199990" data-descripcion="Estilo moderno y sofisticado, Cronógrafo con caja de acero inoxidable y diseño icónico">
+            <img src="../img/relojmk.png" alt="Michael Kors" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Michael Kors</h3>
+            <p class="precio">$199.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>        
+
+
+        <div class="producto-card" data-nombre="Rolex" data-precio="8990000" data-descripcion="Rendimiento y elegancia en una pieza legendaria. Resistente al agua hasta 300 metros">
+            <img src="../img/relojrolex.png" alt="Rolex" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Rolex</h3>
+            <p class="precio">$8.990.000</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+
+        <div class="producto-card" data-nombre="Tommy Hilfiger" data-precio="149990" data-descripcion="Diseño deportivo y elegante, correa de cuero, cronógrafo y detalles en los colores icónicos">
+            <img src="../img/relojtommy.png" alt="Tommy Hilfiger" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Tommy Hilfiger</h3>
+            <p class="precio">$149.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+
+        <div class="producto-card" data-nombre="Armani" data-precio="390990" data-descripcion="Diseño moderno y sofisticado. Cronógrafo con caja de acero inoxidable y estilo icónico">
+            <img src="../img/relojarmani.png" alt="Armani" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Armani</h3>
+            <p class="precio">$390.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+        <div class="producto-card" data-nombre="Casio" data-precio="59990" data-descripcion="Diseño elegante. Cronógrafo con presición japonesa y resistente al agua">
+            <img src="../img/relojcasio.png" alt="Casio" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Casio</h3>
+            <p class="precio">$59.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+        <div class="producto-card" data-nombre="Seiko" data-precio="249990" data-descripcion="Reloj automático de buceo. Cronógrafo con resistencia al agua de 200 metros">
+            <img src="../img/relojseiko.png" alt="Seiko" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Seiko</h3>
+            <p class="precio">$249.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+        <div class="producto-card" data-nombre="Fossil" data-precio="129990" data-descripcion="Estilo clásico y moderno. Cronógrafo con caja de acero inoxidable y correa de cuero">
+            <img src="../img/relojfossil.png" alt="Fossil" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Fossil</h3>
+            <p class="precio">$129.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+        <div class="producto-card" data-nombre="Guess" data-precio="179990" data-descripcion="Cronógrafo moderno y elegante. Diseño con caja de acero inoxidable, esfera azul y brazalete metálico">
+            <img src="../img/relojguess.png" alt="Guess" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Guess</h3>
+            <p class="precio">$179.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+        <div class="producto-card" data-nombre="Citizen" data-precio="299990" data-descripcion="Cronógrafo deportivo y elegante. Funciona con tecnologia Eco-Drive, se carga con la luz y no requiere cambio de batería">
+            <img src="../img/relojcitizen.png" alt="Citizen" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Citizen</h3>
+            <p class="precio">$299.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+        <div class="producto-card" data-nombre="Diesel" data-precio="159990" data-descripcion="Estilo urbano y rebelde. Cronógrafo con caja de acero inoxidable y diseño icónico">
+            <img src="../img/relojdiesel.png" alt="Diesel" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Diesel</h3>
+            <p class="precio">$159.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+        <div class="producto-card" data-nombre="Swatch" data-precio="899990" data-descripcion="Reloj de origen suizo. Diesño moderno icónico, ligero y colorido">
+            <img src="../img/relojswatch.png" alt="Swatch" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Swatch</h3>
+            <p class="precio">$89.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+        <div class="producto-card" data-nombre="Tissot" data-precio="450990" data-descripcion="Cronógrafo elegante. Diseño suizo con caja de acero inoxidable">
+            <img src="../img/relojtissot.png" alt="Tissot" class="producto-img" onclick="abrirModal(this.closest('.producto-card'))">
+            <h3>Tissot</h3>
+            <p class="precio">$450.990</p>
+            <div class="cantidad-selector">
+                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="text" class="cantidad-input" value="0" readonly>
+                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+            <button type="button" onclick="agregarAlCarrito(this)">Añadir</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal-overlay" id="modal-overlay" onclick="cerrarModalFuera(event)">
+    <div class="modal-producto">
+        <button type="button" class="modal-cerrar" onclick="cerrarModal()">&times;</button>
+        <img id="modal-img" class="producto-img modal-img" src="" alt="">
+        <h3 id="modal-nombre"></h3>
+        <p class="precio" id="modal-precio"></p>
+        <p class="modal-descripcion" id="modal-descripcion"></p>
+        <div class="cantidad-selector">
+            <button type="button" onclick="cambiarCantidadModal(-1)">-</button>
+            <input type="text" id="modal-cantidad" class="cantidad-input" value="0" readonly>
+            <button type="button" onclick="cambiarCantidadModal(1)">+</button>
+        </div>
+        <button type="button" onclick="agregarDesdeModal()">Añadir al carrito</button>
+    </div>
+</div>
+
+<div class="carrito-overlay" id="carrito-overlay" onclick="cerrarCarritoFuera(event)">
+    <div class="carrito-panel">
+        <div class="carrito-header">
+            <h3>Tu Carrito</h3>
+            <button type="button" class="carrito-cerrar" onclick="cerrarCarrito()">&times;</button>
+        </div>
+
+        <div class="carrito-lista" id="carrito-lista">
+        </div>
+
+        <div class="carrito-total">
+            <span>Total</span>
+            <span id="carrito-total-monto">$0</span>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+
+    <p>Tienda de Relojes</p>
+
+    <p>Todos los derechos reservados 2026</p>
+
+</footer>
+
+</body>
+
+</html>

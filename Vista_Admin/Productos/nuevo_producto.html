@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto - Chronos</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+ 
+    <table class="menu-admin">
+        <tr>
+            <td><h2>ADMINISTRADOR</h2></td>
+        </tr>
+        <tr>
+            <td><a href="../../admin/home.html">Inicio</a></td>
+        </tr>
+        <tr>
+            <td><a href="Producto_admin.html">Productos</a></td>
+        </tr>
+        <tr>
+            <td><a href="../usuarios/Usuario_admin.html">Usuarios</a></td>
+        </tr>
+        <tr>
+            <td><a href="../../login/login.html">Cerrar Sesión</a></td>
+        </tr>
+    </table>
+ 
+    <div class="registro">
+        <h2>Crear Producto</h2>
+ 
+        <form onsubmit="return false;">
+ 
+            <p>Nombre del producto</p>
+            <input type="text" id="nombreNuevoProducto" maxlength="80">
+ 
+            <p>Precio (sin puntos, ej: 199990)</p>
+            <input type="number" id="precioNuevoProducto" min="0">
+ 
+            <p>Descripción</p>
+            <input type="text" id="descripcionNuevoProducto" maxlength="300">
+ 
+            <br><br>
+ 
+            <button type="button" onclick="crearProductoAdmin()">Guardar Producto</button>
+ 
+        </form>
+ 
+        <br>
+    </div>
+ 
+    <script src="../../js/script.js"></script>
+</body>
+</html>
+ 
